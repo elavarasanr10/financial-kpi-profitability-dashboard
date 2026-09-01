@@ -99,7 +99,7 @@ screenshots/
   05-waterfall-breakdown.png
 ```
 
-![Dashboard Overview](screenshots/screenshots01_full_dashboard.png)
+![Dashboard Overview](screenshots01_full_dashboard.png)
 
 ## Repository Structure
 
