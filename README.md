@@ -99,7 +99,7 @@ screenshots/
   05-waterfall-breakdown.png
 ```
 
-`![Dashboard Overview](screenshots/01-full-dashboard.png)`
+`![Dashboard Overview](screenshots01_full_dashboard.png)`
 
 ## Repository Structure
 
@@ -123,3 +123,6 @@ financial-kpi-profitability-dashboard/
 ## Conclusion
 
 This project demonstrates an end-to-end BI workflow: messy raw data → cleaned and modeled data → DAX-driven KPIs → a decision-ready dashboard. It reflects the kind of financial monitoring tool used in FP&A, business analysis, and management consulting roles to track profitability and support budget decisions.
+
+**Author:** Elavarasan R  
+**Role:** Business / Data Analyst
