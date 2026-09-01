@@ -99,8 +99,8 @@ screenshots/
   05-waterfall-breakdown.png
 ```
 
-![Dashboard Overview](<img width="1021" height="719" alt="screenshots01_full_dashboard png" src="https://github.com/user-attachments/assets/bac347a0-ddd0-473a-82b9-151ff0e6dbdc" />
-)
+![Dashboard Overview]<img width="1021" height="719" alt="screenshots01_full_dashboard png" src="https://github.com/user-attachments/assets/bac347a0-ddd0-473a-82b9-151ff0e6dbdc" />
+
 
 ## Repository Structure
 
