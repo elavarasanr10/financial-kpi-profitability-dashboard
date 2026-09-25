@@ -3,8 +3,8 @@
 > **Author / Created By:** Elavarasan R  
 ---
 
-![Financial KPI Dashboard Summary](screenshots/<img width="1021" height="719" alt="screenshots01_full_dashboard png" src="https://github.com/user-attachments/assets/e997072f-6a6c-4b94-997f-400250143172" />
-)
+![Financial KPI Dashboard Summary]<img width="1021" height="719" alt="screenshots01_full_dashboard png" src="https://github.com/user-attachments/assets/e997072f-6a6c-4b94-997f-400250143172" />
+
 ---
 
 ## 📌 Project Overview
