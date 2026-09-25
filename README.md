@@ -1,24 +1,39 @@
-# Financial KPI Monitoring & Profitability Dashboard
+# 📊 Financial KPI Monitoring & Profitability Dashboard
+
+> **Author / Created By:** Elavarasan R  
+---
+
+![Financial KPI Dashboard Summary](screenshots/01-full-dashboard.png)
+
+---
+
+## 📌 Project Overview
 
 A Power BI dashboard that tracks revenue, cost, profit, and budget performance across regions, departments, and product categories — built to mirror how a Finance Analyst, Business Analyst, or FP&A team monitors company profitability in the real world.
 
-## Objective
+---
+
+## 🎯 Objective
 
 To design a financial monitoring system that helps management answer four questions at a glance:
-1. Are we making money, and how much?
-2. Are we hitting our budget targets?
-3. Which regions, categories, and channels drive profit — and which drag it down?
-4. Is profitability improving or declining over time?
+1. **Are we making money**, and how much?
+2. **Are we hitting our budget targets?**
+3. **Which regions, categories, and channels** drive profit — and which drag it down?
+4. **Is profitability improving or declining** over time?
 
-## Tools Used
+---
 
-- **Power BI Desktop** — data modeling, DAX, dashboard build
-- **Power Query** — data cleaning and transformation
-- **Microsoft Excel** — source dataset
+## 🛠️ Tools Used
+
+- **Power BI Desktop** — Data modeling, DAX, dashboard build
+- **Power Query** — Data cleaning and transformation
+- **Microsoft Excel** — Source dataset
 - **DAX (Data Analysis Expressions)** — KPI and measure logic
-- **GitHub** — version control and portfolio hosting
+- **GitHub** — Version control and portfolio hosting
 
-## Dataset Description
+---
+
+## 📊 Dataset Description
 
 `Financial_KPI_Dataset.xlsx` contains 150 transaction-level rows (Jan 2024 – Dec 2025) with 20 columns:
 
@@ -45,26 +60,32 @@ To design a financial monitoring system that helps management answer four questi
 | Customer Segment | Corporate, Retail, SME, Government, Individual |
 | Sales Channel | Online, Retail Store, Distributor, Direct Sales, Marketplace |
 
-A second file, `Raw_Dataset_Before_Cleaning.xlsx`, is the same data before cleanup — it deliberately contains null values, inconsistent text casing, extra whitespace, and duplicate rows so the Power Query cleaning steps below have something real to fix. Use this file for the "before," and load `Financial_KPI_Dataset.xlsx` (or your own cleaned export) into Power BI as the "after."
+A second file, `Raw_Dataset_Before_Cleaning.xlsx`, is the same data before cleanup — it deliberately contains null values, inconsistent text casing, extra whitespace, and duplicate rows so the Power Query cleaning steps below have something real to fix. Use this file for the "before," and load `Financial_KPI_Dataset.xlsx` into Power BI as the "after."
 
-## Power Query Steps
+---
+
+## 🔄 Power Query Steps
 
 See [`docs/POWER_QUERY_STEPS.md`](docs/POWER_QUERY_STEPS.md) for the full click-by-click walkthrough. Summary:
 
-1. Remove/handle null values (Region, Operating Expenses)
-2. Fix inconsistent text casing (Region) and trim whitespace (Department)
+1. Remove/handle null values (`Region`, `Operating Expenses`)
+2. Fix inconsistent text casing (`Region`) and trim whitespace (`Department`)
 3. Remove duplicate rows
-4. Change data types (Date, currency fields as decimal, Year as whole number)
-5. Confirm/derive Month, Quarter, Year columns
+4. Change data types (`Date`, currency fields as decimal, `Year` as whole number)
+5. Confirm/derive `Month`, `Quarter`, `Year` columns
 6. Rename columns to business-friendly labels
 7. Format currency and percentage fields
 8. Add any calculated columns not already present
 
-## DAX Measures
+---
+
+## 🧮 DAX Measures
 
 See [`docs/DAX_MEASURES.md`](docs/DAX_MEASURES.md) for every measure with its formula and a plain-language explanation. Includes: Total Revenue, Total Cost, Gross Profit, Net Profit, Profit Margin %, Budgeted Revenue, Actual Revenue, Budget Variance, Revenue Growth %, Cost Ratio %, Region-wise Revenue, Category-wise Profitability.
 
-## Dashboard Features
+---
+
+## 🖥️ Dashboard Features
 
 - **KPI cards:** Total Revenue, Gross Profit, Net Profit, Profit Margin %, Budget Variance
 - **Column chart:** Revenue by Region
@@ -76,54 +97,26 @@ See [`docs/DAX_MEASURES.md`](docs/DAX_MEASURES.md) for every measure with its fo
 - **Slicers:** Region, Department, Product Category, Sales Channel, Month
 - **Corporate color theme:** blue for neutral metrics, green for profit/positive variance, red/orange for cost or negative variance
 
-## Key Insights
+---
 
-*(Fill in with your actual numbers once you build the dashboard — sample structure below)*
+## 📈 Key Insights
 
 - The highest-revenue region and the margin gap between best and worst region
-- The most profitable product category vs. the highest-revenue category (often not the same)
+- The most profitable product category vs. the highest-revenue category
 - Whether the company is over or under budget for the period, and by how much
 - The direction of the profit margin trend over the two-year window
 - Which sales channel delivers the best margin, not just the most volume
 
-## Screenshots
+---
 
-Add dashboard screenshots here after building in Power BI Desktop:
+## 📷 Screenshots
 
-```
+![Dashboard Overview](screenshots/01-full-dashboard.png)
+
+```text
 screenshots/
   01-full-dashboard.png
   02-kpi-cards.png
   03-revenue-by-region.png
   04-monthly-trend.png
   05-waterfall-breakdown.png
-```
-
-![Dashboard Overview]<img width="1021" height="719" alt="screenshots01_full_dashboard png" src="https://github.com/user-attachments/assets/bac347a0-ddd0-473a-82b9-151ff0e6dbdc" />
-
-
-## Repository Structure
-
-```
-financial-kpi-profitability-dashboard/
-├── README.md
-├── Financial_KPI_Dataset.xlsx
-├── Raw_Dataset_Before_Cleaning.xlsx
-├── Financial-KPI-Profitability-Dashboard.pbix   (add after building in Power BI Desktop)
-├── docs/
-│   ├── POWER_QUERY_STEPS.md
-│   ├── DAX_MEASURES.md
-│   ├── PROJECT_OVERVIEW.md
-│   ├── RESUME_DESCRIPTIONS.md
-│   ├── LINKEDIN_CONTENT.md
-│   └── PROJECT_CHECKLIST.md
-└── screenshots/
-    └── (dashboard images go here)
-```
-
-## Conclusion
-
-This project demonstrates an end-to-end BI workflow: messy raw data → cleaned and modeled data → DAX-driven KPIs → a decision-ready dashboard. It reflects the kind of financial monitoring tool used in FP&A, business analysis, and management consulting roles to track profitability and support budget decisions.
-
-**Author:** Elavarasan R  
-**Role:** Business / Data Analyst
