@@ -4,7 +4,6 @@
 ---
 
 ![Financial KPI Dashboard Summary](screenshots/screenshots01_full_dashboard.png)
-
 ---
 
 ## 📌 Project Overview
