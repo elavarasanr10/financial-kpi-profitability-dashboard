@@ -3,7 +3,7 @@
 > **Author / Created By:** Elavarasan R  
 ---
 
-![Financial KPI Dashboard Summary](screenshots/01-full-dashboard.png)
+![Financial KPI Dashboard Summary](screenshots/screenshots01_full_dashboard.png)
 
 ---
 
